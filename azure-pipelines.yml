@@ -1,11 +1,11 @@
 trigger:
-  - main  # or 'master' based on your branch name
+  - master 
 
 pool:
   vmImage: 'ubuntu-latest'  # Use Microsoft-hosted agent
 
 steps:
-  - task: UsePythonVersion@0   # Skip if using Node, Java, etc.
+  - task: UsePythonVersion@0   
     inputs:
       versionSpec: '3.x'
       addToPath: true
